@@ -150,16 +150,19 @@ async-each@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/async-each/-/async-each-1.0.1.tgz#19d386a1d9edc6e7c1c85d388aedbcc56d33602d"
 
+async-limiter@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-aws-sdk@>=2.86.0:
-  version "2.141.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.141.0.tgz#3d96a5970fd9f540ceabcc1d4baeb33b71583aa7"
+aws-sdk@>=2.153.0:
+  version "2.205.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.205.0.tgz#1a93730253e2be027a4bd3af9248cbda0573de80"
   dependencies:
     buffer "4.9.1"
-    crypto-browserify "1.0.9"
     events "^1.1.1"
     jmespath "0.15.0"
     querystring "0.2.0"
@@ -858,10 +861,6 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
-crypto-browserify@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/crypto-browserify/-/crypto-browserify-1.0.9.tgz#cc5449685dfb85eb11c9828acc7cb87ab5bbfcc0"
-
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
@@ -1395,12 +1394,12 @@ growl@1.9.2:
   version "1.9.2"
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.9.2.tgz#0ea7743715db8d8de2c5ede1775e1b45ac85c02f"
 
-gun@^0.8:
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/gun/-/gun-0.8.8.tgz#50d9fd31144f7ed1d02de866f0e50df51763c630"
+gun@^0.9.7:
+  version "0.9.96"
+  resolved "https://registry.yarnpkg.com/gun/-/gun-0.9.96.tgz#eedd3f906df24444d150b55f54e5327636591680"
   dependencies:
-    aws-sdk ">=2.86.0"
-    ws "~>2.2.3"
+    aws-sdk ">=2.153.0"
+    ws "~>4.0.0"
 
 har-validator@~2.0.6:
   version "2.0.6"
@@ -2571,10 +2570,6 @@ rxjs@^5.0.0-beta.11:
   dependencies:
     symbol-observable "^1.0.1"
 
-safe-buffer@~5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
-
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -2903,11 +2898,12 @@ write@^0.2.1:
   dependencies:
     mkdirp "^0.5.1"
 
-ws@~>2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-2.2.3.tgz#f36c9719a56dff813f455af912a2078145bbd940"
+ws@~>4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-4.0.0.tgz#bfe1da4c08eeb9780b986e0e4d10eccd7345999f"
   dependencies:
-    safe-buffer "~5.0.1"
+    async-limiter "~1.0.0"
+    safe-buffer "~5.1.0"
     ultron "~1.1.0"
 
 xml2js@0.4.17:
